@@ -1,6 +1,6 @@
 
 # TodoListWidget - Übersicht Widget
-![Screenshot](/screenshot.png)
+![Screenshot](/screenshot.png)<br>
 ![Screenshot](/screenshots/device.png)
 ![Screenshot](/screenshots/device2.png)
 ## **Includes:**

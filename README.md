@@ -23,7 +23,7 @@
 	 - [ ] [subscribe](https://home.openweathermap.org/users/sign_up) to the openweathermap API
 	 - [ ] receive your API key by mail or on [api_key](https://home.openweathermap.org/api_keys)
 
-2.	If you speak English or French, you can use the predefined **config.json** file that is made for you. Just make sure you rename one of the two you want to use for the config.json, you can delete the other. And all you have to do is follow the first 2 subsections of step 3 to complete your installation.
+2.	If you speak English or French, you can use the predefined **config.json** file that is made for you. Just make sure you rename one of the two you want to use for the config.json, you can delete the other. And all you have to do is follow the first 2 subsections and 5 of step 3 to complete your installation.
 3.	If you don't speak English or French, or you want to customize your settings, follow this steps.
 	 - [ ] Open ./ressources/config.json
 	 - [ ] Add your key to **apis.OPEN_WEATHER.key**

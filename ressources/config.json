@@ -1,0 +1,50 @@
+{
+    "apis":{
+        "OPEN_WEATHER": {
+            "key": "f38c183d22ec6c351652146bfa0da026",
+            "url_base": "http://api.openweathermap.org/data/2.5/weather?",
+            "url_icon": "http://openweathermap.org/img/wn/ICON_ID@2x.png",
+            "units": "metric",
+            "lang": "fr"
+        }
+    },
+    "styles":{
+        "backgroundColor": "#00005240",
+        "backgroundDay": "./TodoListWidget/pictures/backgrounds/day.png",
+        "backgroundSunrise": "./TodoListWidget/pictures/backgrounds/sunrise.png",
+        "backgroundSunset": "./TodoListWidget/pictures/backgrounds/sunset.png",
+        "activeColorSunRise": "#65E4DD",
+        "activeColorDay": "#2B91E3",
+        "activeColorSunSet": "#6A46A8"
+    },
+    "days":[
+        "Dimanche",
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "jeudi",
+        "Vendredi",
+        "Samedi"
+    ],
+    "months":[
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+    ],
+    "title": "Bonjour,",
+    "todo":{
+        "completedTaskTitle": "tâche réalisée",
+        "completedTasksTitle": "tâches réalisées",
+        "uncompletedTaskTitle": "tâche en cours",
+        "uncompletedTasksTitle": "tâches en cours"
+    }
+}

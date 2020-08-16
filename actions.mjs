@@ -12,24 +12,14 @@ const setCurrentPath = async () => {
     PATH = (path.substring(0,path.length-1) + "/TodoListWidget");
 }
 
-const getCoords = async () => {
-    let stdout;
-    try{
-        stdout = await run(`automator "${PATH}/automator/coords.app"`);
-    }catch(e){
-        stdout = e.message;
-    }
-    const matches = [...stdout.matchAll(/{latitude:(.*),.*longitude:(.*)}/g)];
-    return {
-        lat: matches[0][1],
-        long: matches[0][2]
-    }
-}
-
 const getWeather = async () => {
-    const coords = await getCoords();
-    return fetch(`${config.apis.OPEN_WEATHER.url_base}units=${config.apis.OPEN_WEATHER.units}&lang=${config.apis.OPEN_WEATHER.lang}&lat=${coords.lat}&lon=${coords.long}&appid=${config.apis.OPEN_WEATHER.key}`)
-    .then(res => res.json())
+    if(config.apis.OPEN_WEATHER.city){
+        return fetch(`${config.apis.OPEN_WEATHER.url_base}units=${config.apis.OPEN_WEATHER.units}&lang=${config.apis.OPEN_WEATHER.lang}&q=${config.apis.OPEN_WEATHER.city}&appid=${config.apis.OPEN_WEATHER.key}`)
+        .then(res => res.json())
+    }else{
+        return fetch(`${config.apis.OPEN_WEATHER.url_base}units=${config.apis.OPEN_WEATHER.units}&lang=${config.apis.OPEN_WEATHER.lang}&lat=${config.apis.OPEN_WEATHER.lat}&lon=${config.apis.OPEN_WEATHER.long}&appid=${config.apis.OPEN_WEATHER.key}`)
+        .then(res => res.json())
+    }
 }
 
 const getHours = () => {

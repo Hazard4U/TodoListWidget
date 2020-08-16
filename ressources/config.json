@@ -1,11 +1,14 @@
 {
     "apis":{
         "OPEN_WEATHER": {
-            "key": "f38c183d22ec6c351652146bfa0da026",
+            "key": "72cdf3bf81e775724f3072925df9ba25",
             "url_base": "http://api.openweathermap.org/data/2.5/weather?",
             "url_icon": "http://openweathermap.org/img/wn/ICON_ID@2x.png",
             "units": "metric",
-            "lang": "fr"
+            "lang": "fr",
+            "city": "Nantes",
+            "lat": "",
+            "long": ""
         }
     },
     "styles":{

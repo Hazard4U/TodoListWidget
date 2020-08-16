@@ -85,6 +85,8 @@ export const updateState = (event, previousState) => {
         return {...newState};
       }
       case 'WEATHER':
+        if(!event.data.weather)
+          return previousState;
         updateStyle(event.data.sys.sunrise,event.data.sys.sunset);
         return {...previousState, weather: {
           icon: event.data.weather[0].icon,

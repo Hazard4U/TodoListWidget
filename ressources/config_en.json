@@ -1,0 +1,53 @@
+{
+    "apis":{
+        "OPEN_WEATHER": {
+            "key": "72cdf3bf81e775724f3072925df9ba25",
+            "url_base": "http://api.openweathermap.org/data/2.5/weather?",
+            "url_icon": "http://openweathermap.org/img/wn/ICON_ID@2x.png",
+            "units": "imperial",
+            "lang": "en",
+            "city": "Nantes",
+            "lat": "",
+            "long": ""
+        }
+    },
+    "styles":{
+        "backgroundColor": "#00005240",
+        "backgroundDay": "./TodoListWidget/pictures/backgrounds/day.png",
+        "backgroundSunrise": "./TodoListWidget/pictures/backgrounds/sunrise.png",
+        "backgroundSunset": "./TodoListWidget/pictures/backgrounds/sunset.png",
+        "activeColorSunRise": "#65E4DD",
+        "activeColorDay": "#2B91E3",
+        "activeColorSunSet": "#6A46A8"
+    },
+    "days":[
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ],
+    "months":[
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ],
+    "title": "Hello,",
+    "todo":{
+        "completedTaskTitle": "completed task",
+        "completedTasksTitle": "completed tasks",
+        "uncompletedTaskTitle": "ongoing task",
+        "uncompletedTasksTitle": "ongoing tasks"
+    }
+}
